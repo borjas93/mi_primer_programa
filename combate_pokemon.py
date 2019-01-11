@@ -33,9 +33,9 @@ else:
     dano_rival = dano_bul
 
 
-print('¡Que de comienzo el combate!')
+print('¡Que de comience el combate!')
 
-while vida_pikachu or vida_rival > 0:
+while vida_pikachu and vida_rival > 0:
 
     contendientes = yo , rival
     turno = random.choice(contendientes)
