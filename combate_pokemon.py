@@ -1,6 +1,6 @@
 import random
 
-rival = input('Seleciona un rival: (Bulbasaur, Squirtle o Charmander) ').capitalize()
+rival = input('Selecciona un rival: (Bulbasaur, Squirtle o Charmander) ').capitalize()
 yo = 'Pikachu'
 
 vida_pikachu = 100
@@ -10,6 +10,12 @@ vida_charmander = 90
 
 [chispazo, bola_voltio] = 10,12
 [dano_bul, dano_char, dano_squ] = 10 , 11 , 9
+
+while rival != 'Bulbasaur' and rival != 'Charmander' and rival != 'Squirtle':
+
+    print('Te has equivocado al escribir. Vuelve a introducir un nombre pokemon valido.')
+    rival = input('Selecciona un rival: (Bulbasaur, Squirtle o Charmander) ').capitalize()
+
 
 if rival == 'Squirtle':
 
@@ -27,7 +33,7 @@ elif rival == 'Charmander':
     vida_rival = vida_charmander
     dano_rival = dano_char
 
-else:
+elif rival == 'Bulbasaur':
 
     vida_rival = vida_bulbasaur
     dano_rival = dano_bul
@@ -51,7 +57,7 @@ while vida_pikachu and vida_rival > 0:
             vida_rival -= bola_voltio
             print('Le has hecho {} puntos de daño. A {} le quedan {} puntos de vida'.format(bola_voltio , rival , vida_rival))
 
-        else:
+        elif ataque == 'Chispazo':
 
             vida_rival -= chispazo
             print('Le has hecho {} puntos de daño. A {} le quedan {} puntos de vida'.format(chispazo , rival , vida_rival))
@@ -85,7 +91,7 @@ while vida_pikachu and vida_rival > 0:
                 vida_rival -= bola_voltio
                 print('Le has hecho {} puntos de daño. A {} le quedan {} puntos de vida'.format(bola_voltio, rival, vida_rival))
 
-            else:
+            elif ataque == 'Chispazo':
 
                 vida_rival -= chispazo
                 print('Le has hecho {} puntos de daño. A {} le quedan {} puntos de vida'.format(chispazo, rival, vida_rival))
