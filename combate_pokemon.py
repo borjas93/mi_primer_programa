@@ -52,6 +52,10 @@ while vida_pikachu and vida_rival > 0:
 
         ataque = input('Selecciona un ataque: (Bola voltio/Chispazo) ').capitalize()
 
+        while ataque != 'Bola voltio' and ataque != 'Chispazo':
+            print('Te has equivocado al escribir. Vuelve a introducir un ataque valido.')
+            ataque = input('Selecciona un ataque: (Bola voltio/Chispazo) ').capitalize()
+
         if ataque == 'Bola voltio':
 
             vida_rival -= bola_voltio
@@ -85,6 +89,10 @@ while vida_pikachu and vida_rival > 0:
 
             print('A {} le quedan {} puntos de vida'.format(yo, vida_pikachu))
             ataque = input('Selecciona un ataque: (Bola voltio/Chispazo) ').capitalize()
+
+            while ataque != 'Bola voltio' and ataque != 'Chispazo':
+                print('Te has equivocado al escribir. Vuelve a introducir un ataque valido.')
+                ataque = input('Selecciona un ataque: (Bola voltio/Chispazo) ').capitalize()
 
             if ataque == 'Bola voltio':
 
