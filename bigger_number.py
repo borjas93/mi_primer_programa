@@ -25,6 +25,4 @@ while len(lista_numeros) < 15:
 
 print(lista_numeros)
 
-variable = lista_numeros
-
-bigger_number(variable)
+bigger_number(lista_numeros)
