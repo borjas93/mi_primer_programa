@@ -1,7 +1,8 @@
 '''
-Ejercicio de una agenda de telefonos usando listas.
+Ejercicio de lista telefonica usando diccionarios
 '''
-agenda = []
+
+agenda = dict()
 
 while True:
 
@@ -15,14 +16,12 @@ while True:
         nombre = input('Cual es el nombre? ').capitalize()
         print('')
         numero = input('Cual es su numero? ')
-        agenda.append([nombre, numero])
+        agenda[nombre] = numero
 
     elif accion == 'C':
         nombre = input('De quien quieres saber el numero? ').capitalize()
         print('')
-        for item in agenda:
-            if nombre == item[0]:
-                print(item[1])
+        print(agenda[nombre])
 
     else:
         break
