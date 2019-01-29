@@ -14,7 +14,6 @@ def detectar_palabras(cadena):
         else:
             lista_palabras.append(palabra)
             palabra = ''
-    lista_palabras.append(palabra)
     print(lista_palabras)
     return lista_palabras
 
