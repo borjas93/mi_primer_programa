@@ -16,8 +16,7 @@ Cuando el n�mero de Buenas sea 3, el usuario ha acertado el n�mero.
 
 from random import randint
 
-"""number_to_guess = str(randint(100, 999))"""
-number_to_guess = '622'
+number_to_guess = str(randint(100, 999))
 
 user_number = '0'
 
